@@ -623,6 +623,7 @@ export const fetchGogoanimeEpisodeSource = async ({ episodeId }) => {
 			Referer: gogoWatchLink.href,
 			sources: sources,
 			sources_bk: sources_bk,
+			src: sources ? sources[0].file : null,
 		};
 	} catch (err) {
 		console.log(err);
